@@ -12,4 +12,33 @@ This report summarizes exploratory analysis of the SwiftKey text data.
 
 The English datasets from blogs, news and Twitter were loaded.
 
-# Basic Statistics
+## Dataset Comparison
+
+```{r}
+summaryTable <- data.frame(
+  File = c("Blogs","News","Twitter"),
+  Lines = c(899288,1010242,2360148),
+  Words = c(37546250,34762395,30093413)
+)
+
+barplot(
+  summaryTable$Words,
+  names.arg = summaryTable$File,
+  col = c("blue","green","red"),
+  main = "Word Counts by Dataset"
+)
+```
+
+## Basic Statistics
+
+```{r}
+summaryTable
+```
+
+## Findings
+
+The Blogs dataset contains the highest number of words.
+
+The Twitter dataset contains the highest number of lines.
+
+A sample of the data was selected for exploratory analysis and future predictive modeling.
