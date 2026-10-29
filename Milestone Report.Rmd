@@ -1,0 +1,15 @@
+---
+title: "Data Science Capstone Milestone Report"
+author: "Sharif Ahmed"
+output: html_document
+---
+
+# Executive Summary
+
+This report summarizes exploratory analysis of the SwiftKey text data.
+
+# Data Loading
+
+The English datasets from blogs, news and Twitter were loaded.
+
+# Basic Statistics
